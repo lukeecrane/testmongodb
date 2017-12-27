@@ -1,0 +1,39 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\luke\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'test' ]
+2 info using npm@4.0.5
+3 info using node@v8.9.1
+4 verbose run-script [ 'pretest', 'test', 'posttest' ]
+5 info lifecycle node-todo-api@1.0.0~pretest: node-todo-api@1.0.0
+6 silly lifecycle node-todo-api@1.0.0~pretest: no script for pretest, continuing
+7 info lifecycle node-todo-api@1.0.0~test: node-todo-api@1.0.0
+8 verbose lifecycle node-todo-api@1.0.0~test: unsafe-perm in lifecycle true
+9 verbose lifecycle node-todo-api@1.0.0~test: PATH: C:\Users\luke\AppData\Roaming\npm\node_modules\npm\bin\node-gyp-bin;D:\Users\luke\React\courses\nodejs\node-todo-api\node_modules\.bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files\nodejs;C:\Users\luke\vcbuild;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Python27;C:\Users\luke\AppData\Roaming\npm;D:\Program Files\MongoDB\Server\3.2\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\play\activator-1.3.10\bin;C:\Program Files\Java\jdk1.8.0_91\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\Program Files\PostgreSQL\9.5\bin;D:\java_stuff\apache-maven-3.3.9\bin;C:\Users\luke\AppData\Local\.meteor\;D:\grails\grails-3.2.8\bin;C:\Program Files (x86)\Windows Live\Shared;C:\ProgramData\chocolatey\bin;D:\Program Files\Android\android-sdk/platform-tools;D:\Program Files\CMake\bin;D:\Program Files\Rethink;D:\Program Files (x86)\GnuWin32\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Go\bin;D:\PostgreSQL\pg96\bin;D:\Program Files (x86)\sbt\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\dotnet\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin;D:\Program Files\Git\cmd;D:\Program Files\Git\mingw64\bin;D:\Program Files\Git\usr\bin;C:\Users\luke\scoop\shims;C:\Users\luke\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\luke\AppData\Local\Programs\Python\Python36-32\;C:\Users\luke\AppData\Local\.meteor\;D:\Users\luke\AppData\Local\Android\sdk\platform-tools;C:\Users\luke\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Microsoft VS Code\bin;D:\Program Files\Gradle\gradle-3.3\bin;"D:\Program Files\nodejs";C:\Users\luke\AppData\Local\Yarn\bin;D:\Program Files\Heroku\bin
+10 verbose lifecycle node-todo-api@1.0.0~test: CWD: D:\Users\luke\React\courses\nodejs\node-todo-api
+11 silly lifecycle node-todo-api@1.0.0~test: Args: [ '/d /s /c', 'mocha server/**/*.test.js' ]
+12 silly lifecycle node-todo-api@1.0.0~test: Returned: code: 3221225786  signal: null
+13 info lifecycle node-todo-api@1.0.0~test: Failed to exec test script
+14 error Test failed.  See above for more details.
+15 verbose exit [ 1, true ]
+16 verbose stack Error: kill ENOSYS
+16 verbose stack     at Object._errnoException (util.js:1024:11)
+16 verbose stack     at process.kill (internal/process.js:183:18)
+16 verbose stack     at process.listener (C:\Users\luke\AppData\Roaming\npm\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+16 verbose stack     at emitNone (events.js:111:20)
+16 verbose stack     at process.emit (events.js:208:7)
+16 verbose stack     at processEmit (C:\Users\luke\AppData\Roaming\npm\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+16 verbose stack     at processEmit (C:\Users\luke\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+16 verbose stack     at Signal.wrap.onsignal (internal/process.js:208:44)
+17 verbose cwd D:\Users\luke\React\courses\nodejs\node-todo-api
+18 error Windows_NT 10.0.14393
+19 error argv "D:\\Program Files\\nodejs\\node.exe" "C:\\Users\\luke\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "test"
+20 error node v8.9.1
+21 error npm  v4.0.5
+22 error code ENOSYS
+23 error errno ENOSYS
+24 error syscall kill
+25 error kill ENOSYS
+26 error If you need help, you may report this error at:
+26 error     <https://github.com/npm/npm/issues>
+27 verbose exit [ 1, true ]

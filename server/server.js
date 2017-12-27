@@ -1,6 +1,8 @@
+require('./config/config.js');
+
 const express = require('express');
 const bodyParser = require('body-parser');
-const {ObjectId} = require('mongodb');
+const {ObjectID} = require('mongodb');
 const _= require('lodash');
 
 var {mongoose} = require('./db/mongoose');
@@ -8,7 +10,7 @@ var {Todo} = require('./models/todo.js');
 var {User} = require('./models/user.js');
 
 var app =express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 
 app.use(bodyParser.json())
 
@@ -38,7 +40,7 @@ app.get('/todos',(req, res) => {
 app.get('/todos/:id',(req,res) => {
     var id= req.params.id;
 
-    if (!ObjectId.isValid(id)) {
+    if (!ObjectID.isValid(id)) {
         return res.status(404).send();
     } 
   
@@ -55,24 +57,23 @@ app.get('/todos/:id',(req,res) => {
 })
 
 
-app.delete('/todos/:id',(req,res) => {
-    var id= req.params.id;
-
-    if (!ObjectId.isValid(id)) {
-        return res.status(404).send();
-    } 
+app.delete('/todos/:id', (req, res) => {
+    var id = req.params.id;
   
-    
+    if (!ObjectID.isValid(id)) {
+      return res.status(404).send();
+    }
+  
     Todo.findByIdAndRemove(id).then((todo) => {
-        if (!todo) {
-            return res.status(404).send({});
-        }
-        res.status(200).send({todo});
+      if (!todo) {
+        return res.status(404).send();
+      }
+  
+      res.send({todo});
     }).catch((e) => {
-        console.log(e);
-        res.status(400).send();
+      res.status(400).send();
     });
-});
+  });
 
 
 app.patch('/todos/:id', (req, res) => {

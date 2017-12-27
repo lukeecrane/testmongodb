@@ -6,7 +6,7 @@ var todoSchema = new Schema({
     text: {
         type: String,
         required: true,
-        minlength: 3,
+        minlength: 1,
         trim: true
     },
     completed: {
@@ -22,3 +22,4 @@ var todoSchema = new Schema({
 var Todo = mongoose.model('Todo',todoSchema)
 console.log("**********TODO*****************")
 module.exports = {Todo};
+
